@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchNewsResults"
+    android:layout_margin="10dp">
+
+
+    <ImageView
+        android:id="@+id/true_news"
+        android:layout_width="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/true_sign"/>
+    <TextView
+        android:id="@+id/news_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/true_news"
+        android:layout_marginTop="10dp"
+        android:textColor="#1CD323"
+        android:layout_centerHorizontal="true"
+        android:text="This news is probably true"
+        android:textSize="25sp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/true_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_status"
+        android:layout_marginTop="10dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/trial_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_margin="10dp"
+                android:src="@drawable/try_image_main"
+                />
+            <TextView
+                android:id="@+id/main_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trial_image"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Tests Negative for COVID, Discharged."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView
+                android:id="@+id/preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/main_head"
+                android:text="Amitabh, 77, and Abhishek were admitted to Nanavati hospital after they tested positive for COVID-19 on July 11.Taking to Twitter, Abhishek, 44, wrote Amitabh will now be resting at home...."/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/preview"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-25dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/try_head" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/true_link2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/true_link"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/true_link"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/card2_image"/>
+        <TextView
+            android:id="@+id/main_head1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image2"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Back Home, Tweets Amitabh Bachchan After Testing Negative For COVID-19"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            />
+        <TextView
+            android:id="@+id/preview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/main_head1"
+            android:text=" Actor Amitabh Bachchan has been discharged from Mumbai's Nanavati Hospital, where he was being treated for COVID-19, after a 23-day stay on Sunday. "/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/preview1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-25dp"
+            android:src="@drawable/main_symbol2" />
+
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

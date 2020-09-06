@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreenUser"
+    android:background="@drawable/fluidback"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/userIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/personal_info"
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/userId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userIcon"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="What is your email id?"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <EditText
+                android:id="@+id/userPass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userId"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter password"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <Button
+                android:id="@+id/userLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userPass"
+                android:background="@drawable/rounded_button_grad_blue"
+                android:layout_margin="20dp"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:onClick="initiateUserLogin"/>
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:layout_below="@+id/userLogin"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/userSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/or"
+                android:background="@drawable/rounded_button_grad_blue"
+                android:layout_margin="20dp"
+                android:text="Signup"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:onClick="initiateUserSignup"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

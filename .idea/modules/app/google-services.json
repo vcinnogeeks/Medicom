@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "894447794340",
+    "firebase_url": "https://medicom-ba10b.firebaseio.com",
+    "project_id": "medicom-ba10b",
+    "storage_bucket": "medicom-ba10b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894447794340:android:1222957ebe506500164e31",
+        "android_client_info": {
+          "package_name": "com.example.medicom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894447794340-dbk5gu9emck154rmh4jnudlko2br1l4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medicom",
+            "certificate_hash": "66ea5c27694ba9387669486b860f6b2225368cef"
+          }
+        },
+        {
+          "client_id": "894447794340-vq17ul0t75alokqedhdegt3nnlp31d59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHqwyZkcUR_rBIwnHLCrWudmAtW-te0lw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894447794340-vq17ul0t75alokqedhdegt3nnlp31d59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

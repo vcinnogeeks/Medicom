@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FakeNewsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fake_news_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="50dp">
+
+    <ImageView
+        android:id="@+id/addIssue"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/post_add"
+        android:padding="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

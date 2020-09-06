@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AppointmentsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:id="@+id/appointment_skeleton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22359E">
+
+            <ImageView
+                android:id="@+id/video_icon"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/video_camera_icon" />
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/video_icon"
+                android:layout_marginTop="30dp"
+                android:layout_margin="25dp"
+                android:text="Appointment By Dr. Rohit Mehra."
+                android:textColor="#ffff"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/user_pro"
+                android:layout_below="@id/doctor_name"
+                android:layout_marginTop="10dp"
+                android:layout_margin="22dp"
+                android:text="Tuesday at 5:00 PM"
+                android:textSize="15sp"
+                android:textColor="#ffff"
+                />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_pro"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/doctor_name"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/user_doctor" />
+
+            <Button
+                android:id="@+id/joinCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="60dp"
+                android:background="#5C73F1"
+                android:text="Join Call"
+                android:textColor="#ffff" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

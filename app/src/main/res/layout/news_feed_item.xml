@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="300dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/postImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_action_name"/>
+
+        <TextView
+            android:id="@+id/postUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/postImage"
+            android:layout_marginTop="20dp"
+            android:text="chinmoy12c"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/answersCountImg"/>
+
+        <TextView
+            android:id="@+id/postTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/postImage"
+            android:layout_below="@+id/postUsername"
+            android:text="2 days ago"/>
+
+        <ImageView
+            android:id="@+id/answersCountImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/answersCount"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_chat_bubble_24"/>
+
+        <TextView
+            android:id="@+id/answersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:text="10"
+            android:textColor="#00cc00"
+            />
+
+        <TextView
+            android:id="@+id/postDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/postImage"
+            android:layout_above="@+id/consultPrivate"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:ellipsize="end"
+            android:maxLines="8"
+            android:text="Miles Scott stole everyone's heart as a 5-year-old leukemia patient who took over San Francisco in 2013 as Batkid after he told the Make-A-Wish Foundation that he wanted to be Batman. People crowded the streets to cheer him on after San Francisco was turned into Gotham for a day with the help of late mayor Ed Lee and 20,000 volunteers. This year, the foundation announced that Miles, now 10, has been in remission for five years. This is an important milestone when many people can be considered as likely to be cancer-free."/>
+
+        <Button
+            android:id="@+id/consultPublic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#1E57CA"
+            android:layout_marginBottom="10dp"
+            android:text="Consult Here"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/consultPrivate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_above="@+id/consultPublic"
+            android:background="#1E57CA"
+            android:layout_marginBottom="10dp"
+            android:text="Consult in private"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/showAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="#1E57CA"
+            android:layout_marginBottom="10dp"
+            android:text="Show Answers"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

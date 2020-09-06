@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreenDoctor"
+    android:background="@drawable/fluidback"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/doctorIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/doctor"
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/doctorId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/doctorIcon"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="What is your email id?"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edit_text"/>
+
+            <EditText
+                android:id="@+id/doctorPass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/doctorId"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter your password"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:id="@+id/attachDocs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctorPass"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button_grad_blue"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:onClick="initiateDoctorLogin"/>
+
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/doctorQualificationBanner"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/doctorPass"-->
+<!--                android:text="Please attach your qualification proof below."-->
+<!--                android:layout_margin="20dp"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/attachDocs"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/doctorQualificationBanner"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:background="@drawable/rounded_button_grad_blue"-->
+<!--                android:text="Attach  Document"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#ffffff"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_below="@+id/doctorQualificationBanner"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:src="@drawable/ic_baseline_add_circle_24"-->
+<!--                android:translationZ="100dp"-->
+<!--                android:alpha="0.7"/>-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

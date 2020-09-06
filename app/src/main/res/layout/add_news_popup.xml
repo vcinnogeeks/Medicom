@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="450dp"
+    app:cardCornerRadius="12dp"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enter_news_text"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="ENTER NEWS"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/enter_news_text"
+            android:src="@drawable/search_icon" />
+
+        <TextView
+            android:id="@+id/search_panel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/enter_news_text"
+            android:layout_margin="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rectangle_edit_text_blue"
+            android:layout_marginBottom="10dp"
+            android:gravity="top"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="Amitabh Bachchan covid negative and released from hospital."/>
+
+        <Button
+            android:id="@+id/search_bttn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textColor="#ffff"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/search_panel"
+            android:background="@drawable/rounded_button_grad_blue"
+            android:text="SEARCH(Test)"
+            />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
